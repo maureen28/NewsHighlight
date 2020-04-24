@@ -23,3 +23,13 @@ source virtual/bin/activate
 <li>Run <code>./start.sh</code></li>
 <li>Access the app through `localhost:5000`</li>
 </ol>
+
+# Live link :
+
+## Technology & Dependency
+<ol>
+<li>python3.6</li>
+<li>Pip</li>
+<li>CSS(Bootstrap)</li>
+<li>Flask Framework</li>
+</ol>
