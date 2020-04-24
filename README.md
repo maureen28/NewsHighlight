@@ -34,6 +34,21 @@ source virtual/bin/activate
 <li>Flask Framework</li>
 </ol>
 
+## BDD
+
+
+### Known Bugs
+If you find a bug please feel free to alert me.
+To fix the bug:
+<ul list-style-type=circle;>
+<li>Fork the repository</li>
+<li>Open your terminal</li>
+<li>Create a new branch</li>
+<li>Make the changes, then (git add) to add changes</li>
+<li>Commit the changes you have made(git commit -m"Fix bug") </li>
+<li>Push changes made and click pull request so that I can access the changes made.</li>
+</ul>
+
 ## Contact Information
 
 To get in touch E-MAIL me on nimz69509@gmail.com
