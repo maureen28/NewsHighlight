@@ -18,3 +18,11 @@
 <p>It is entirely powered by the News Api.</p>
 <p>This project covers fetching, filtering and displaying data </p>
 <p>It's future scope is the ability to implement subscription and authentication. Users will be able to subscribe so they can get the latest news.</p>
+
+<li><b> Goals</b></li>
+<ul>
+<li>Gives information on politics, business, health and entertainment</li>
+<li>Easily accessible</li>
+<li>Instant and latest news from all over the world</li>
+<li>Pictures relvant to the articles</li>
+<ul>
