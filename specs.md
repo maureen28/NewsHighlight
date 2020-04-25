@@ -61,3 +61,6 @@ Periodically, the News app gets updates from The News Web API using the defined 
 The data contained is not filtered by contents, hence the news app won't be responsible for any rude or explicit wordings or images.
 </code>
 </pre>
+
+<h2> 4. Future Directions and Open Questions </h2><hr>
+<p>NOTE : this app has been designed and implemented using Flask. It also allows flexibility for different uses.</p>
