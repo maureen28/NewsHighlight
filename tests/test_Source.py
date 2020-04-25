@@ -24,4 +24,17 @@ class TestSource(unittest.TestCase):
         self.assertEqual(self.new_source.name, 'CNN News')
         self.assertEqual(self.new_source.country, 'U.S.A')
         self.assertEqual(self.new_source.language, 'en')
+
+# Article
         
+class TestArticle(unittest.TestCase):
+    """Defines test for the NewsSource class behaviour
+    """
+    
+    def setUp(self):
+          '''
+        Set up method that will run before every Test
+        '''
+        self.new_article = Articles('CNN','Georgia starts to reopen but nervous mayors warn that coronavirus crisis isn"t over', 'Maeve Reston', 'edition.cnn.com', 'Global coronavirus pandemic', '2020-04-25T14:15:36Z', 'coronavirus.jpg')
+        
+    
