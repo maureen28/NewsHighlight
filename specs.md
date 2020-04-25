@@ -57,3 +57,7 @@ Periodically, the News app gets updates from The News Web API using the defined 
 <p>The app should work fine but if it doesn't feel free to raise a compability issue </p>
 </ol>
 <pre>
+<code>** Disclaimer **
+The data contained is not filtered by contents, hence the news app won't be responsible for any rude or explicit wordings or images.
+</code>
+</pre>
