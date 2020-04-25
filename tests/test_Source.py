@@ -17,3 +17,11 @@ class TestSource(unittest.TestCase):
           '''
         test_init test case to test if the object is initialized properly
         '''
+        self.assertEqual(self.new_source.id, 'CNN')
+        self.assertEqual(self.new_source.description, 'Cable News Newtork that is a leader in providing news worldwide')
+        self.assertEqual(self.new_source.url, 'cnn.com')
+        self.assertEqual(self.new_source.category, 'general')
+        self.assertEqual(self.new_source.name, 'CNN News')
+        self.assertEqual(self.new_source.country, 'U.S.A')
+        self.assertEqual(self.new_source.language, 'en')
+        
