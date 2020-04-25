@@ -11,3 +11,8 @@ class Sources:
         self.name = name
         self.country = country
         self.language = language
+        
+        
+class Articles:
+    """ Articles class to define news Article objects
+    """
