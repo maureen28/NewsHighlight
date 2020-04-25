@@ -32,3 +32,21 @@
 <code>This app must be secure in all environments. We do this by using the SECRET_API_KEY to avoid explicity as well as forgery</code>
 </pre>
 </ol>
+
+<h2> 2. System Overview </h2><hr>
+<p>This app follows the following steps to ensure it outputs the latest news from different sources </p>
+<ol>
+<li><b> How the System Works</b></li>
+<pre><code> 
+<b>Fetching data:</b>
+Periodically, the News app gets updates from The News Web API using the defined Base_URL and an API_KEY, with the use of a context manager, the data from the API gets read, then converted into json format and stored in an object.
+
+<b>Processing data:</b>
+        The Json data then gets processed while applying a filter by the key value assigned to a variable
+        ie: Once we create an object we then instantiate it respective class.
+
+<b>Displaying data:</b>
+        Processed data then get passed into the template(html), where it gets iterated through and displayed.
+</code></pre>
+</ul>
+<h2> 3. Usage </
