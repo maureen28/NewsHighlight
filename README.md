@@ -39,6 +39,30 @@ source virtual/bin/activate
 </ol>
 
 ## BDD
+<table>
+<th>
+<tr>
+<th>Behaviour</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</th>
+<tr>
+<td>Display articles from a news source</td>
+<td><strong>Click a news source</strong></td>
+<td>Redirected to a page with a list of articles from the source</td>
+</tr>
+<tr>
+<td>Display news sources</td>
+<td><strong>On page load</strong></td>
+<td>List of various news sources is displayed per category</td>
+</tr>
+<tr>
+<td>Display the preview of an article</td>
+<td><strong>On page load</strong></td>
+<td>Each article displays an image, title, description and publication date</td>
+</tr>
+</table>
 
 
 ### Known Bugs
