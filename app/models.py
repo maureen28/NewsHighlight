@@ -16,3 +16,14 @@ class Sources:
 class Articles:
     """ Articles class to define news Article objects
     """
+    def __init__(self, id, title, image, description, url, author,  date):
+        """Create instances for newsArticle
+        """
+        self.id = id
+        self.title = title
+        self.image = image
+        self.description = description
+        self.url = url
+        self.author = author
+        self.date = date
+        
