@@ -49,4 +49,11 @@ Periodically, the News app gets updates from The News Web API using the defined 
         Processed data then get passed into the template(html), where it gets iterated through and displayed.
 </code></pre>
 </ul>
-<h2> 3. Usage </
+<h2> 3. Usage </h2><hr>
+<ol type ='a'>
+<li><b> Requirements</b></li>
+<p>Fair or good Internet Connection.</p>
+<p>You can choose to use the live link provided in the README. Click it and follow instructions given on readme.</p>
+<p>The app should work fine but if it doesn't feel free to raise a compability issue </p>
+</ol>
+<pre>
