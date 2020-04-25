@@ -64,7 +64,6 @@ source virtual/bin/activate
 </tr>
 </table>
 
-
 ### Known Bugs
 If you find a bug please feel free to alert me.
 To fix the bug:
