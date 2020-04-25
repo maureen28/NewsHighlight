@@ -10,3 +10,11 @@
 <li>Usage</li>
 <li>Future Directions and open Questions</li>
 </ul>
+
+<h2> 1. Introduction </h2><hr>
+<ol type='A'>
+<li><b> Scope</b></li>
+<p>This is a News Web application that keeps track of the top headlines as well as lists and preview news articles from various sources.</p>
+<p>It is entirely powered by the News Api.</p>
+<p>This project covers fetching, filtering and displaying data </p>
+<p>It's future scope is the ability to implement subscription and authentication. Users will be able to subscribe so they can get the latest news.</p>
