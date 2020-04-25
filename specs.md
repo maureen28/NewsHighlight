@@ -26,3 +26,9 @@
 <li>Instant and latest news from all over the world</li>
 <li>Pictures relvant to the articles</li>
 <ul>
+
+<li><b> Goals for implementation</b></li>
+<pre>
+<code>This app must be secure in all environments. We do this by using the SECRET_API_KEY to avoid explicity as well as forgery</code>
+</pre>
+</ol>
