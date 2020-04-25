@@ -37,4 +37,17 @@ class TestArticle(unittest.TestCase):
         '''
         self.new_article = Articles('CNN','Georgia starts to reopen but nervous mayors warn that coronavirus crisis isn"t over', 'Maeve Reston', 'edition.cnn.com', 'Global coronavirus pandemic', '2020-04-25T14:15:36Z', 'coronavirus.jpg')
         
+     def test_instance(self):
+        self.assertTrue(isinstance(self.new_article, Articles))
     
+    def test_init(self):
+          '''
+        test_init test case to test if the object is initialized properly
+        '''
+        self.assertEqual(self.new_article.id, 'CNN')
+        self.assertEqual(self.new_article.title, 'Georgia starts to reopen but nervous mayors warn that coronavirus crisis isn"t over')
+        self.assertEqual(self.new_article.author, 'Maeve Reston')
+        self.assertEqual(self.new_article.url, 'edition.cnn.com')
+        self.assertEqual(self.new_article.description, 'Global coronavirus pandemic')
+        self.assertEqual(self.new_article.date, '2020-04-25T14:15:36Z')
+        self.assertEqual(self.new_article.image, 'coronavirus.jpg')
