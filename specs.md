@@ -64,3 +64,4 @@ The data contained is not filtered by contents, hence the news app won't be resp
 
 <h2> 4. Future Directions and Open Questions </h2><hr>
 <p>NOTE : this app has been designed and implemented using Flask. It also allows flexibility for different uses.</p>
+<p>If you have any questions feel free to <a href ='mailto:nimz69509@gmail.com'>Email me</a>. Your suggestions are welcomed.</p>
