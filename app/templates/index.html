@@ -7,3 +7,28 @@
 {{super()}} 
 <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 {% endblock %}
+
+
+<!-- Main content -->
+
+{% block content %}
+
+    <div class="container-fluid">
+    <!-- News source section  -->
+    <h3>Business News</h3>
+    {{macro.displaySourceList(sources)}}
+    <!-- Entertainment section  -->
+    <h3>Entertainment News</h3>
+    {{macro.displaySourceList(ent)}}
+    <!-- Sports section  -->
+    <h3>Sports News</h3>
+    {{macro.displaySourceList(sports)}}
+    <!-- Technology section  -->
+    <h3>technology News</h3>
+    {{macro.displaySourceList(tech)}}
+    <!-- Health section  -->
+    <h3>Health News</h3>
+    {{macro.displaySourceList(health)}}
+
+</div>
+    {% endblock %}
