@@ -31,7 +31,11 @@ def get_sources(category):
     get_sources_response = json.loads(get_sources_data)
     
     sources_results = None
-    
-    
+    if get_sources_response['results']:
+        sources_results_list = get_sources_response['results']
+        sources_results = process_results(sources_results_list)
+        
+    return sources_results
+
     
     
