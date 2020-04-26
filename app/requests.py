@@ -12,3 +12,11 @@ articles_url = None
 
 # search
 everything_search_url = None
+
+def configure_request(app):
+    global api_key,base_url, articles_url, everything_search_url
+    api_key = app.config ['NEWS_API_KEY']
+    base_url = app.config ['NEWS_API_BASE_URL']
+    articles_url = app.config ['ARTICLES_API_KEY']
+    everything_search_url = app.config['EVERYTHING_SEARCH_URL']
+    
