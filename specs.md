@@ -42,11 +42,10 @@
 Periodically, the News app gets updates from The News Web API using the defined Base_URL and an API_KEY, with the use of a context manager, the data from the API gets read, then converted into json format and stored in an object.
 
 <b>Processing data:</b>
-        The Json data then gets processed while applying a filter by the key value assigned to a variable
-        ie: Once we create an object we then instantiate it respective class.
-
+The Json data then gets processed while applying a filter by the key value assigned to a variable
+ie: Once we create an object we then instantiate it respective class.
 <b>Displaying data:</b>
-        Processed data then get passed into the template(html), where it gets iterated through and displayed.
+Processed data then get passed into the template(html), where it gets iterated through and displayed.
 </code></pre>
 </ul>
 <h2> 3. Usage </h2><hr>
@@ -64,4 +63,4 @@ The data contained is not filtered by contents, hence the news app won't be resp
 
 <h2> 4. Future Directions and Open Questions </h2><hr>
 <p>NOTE : this app has been designed and implemented using Flask. It also allows flexibility for different uses.</p>
-<p>If you have any questions feel free to <a href ='mailto:nimz69509@gmail.com'>Email me</a>. Your suggestions are welcomed.</p>
+<p>If you have any questions feel free to <a href ='nimz69509@gmail.com'>Email me</a>. Your suggestions are welcomed.</p>

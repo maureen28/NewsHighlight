@@ -11,7 +11,7 @@ They are able to see various news sources on the application homepage, select a 
 
 ## Setup Instructions
 <ol>
-<li>Clone or download the repository <code></code> </li>
+<li>Clone or download the repository <code>https://github.com/maureen28/NewsHighlight.git</code> </li>
 <li>Create a virtual environment
 <pre>
 <code>
@@ -28,7 +28,7 @@ source virtual/bin/activate
 <li>Access the app through `localhost:5000`</li>
 </ol>
 
-# Live link :
+### Live link :
 
 ## Technology & Dependency
 <ol>
@@ -40,13 +40,11 @@ source virtual/bin/activate
 
 ## BDD
 <table>
-<th>
 <tr>
 <th>Behaviour</th>
 <th>Input</th>
 <th>Output</th>
 </tr>
-</th>
 <tr>
 <td>Display articles from a news source</td>
 <td><strong>Click a news source</strong></td>
