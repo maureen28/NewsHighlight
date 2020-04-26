@@ -61,7 +61,6 @@ def get_article(id):
 	Function that processes the articles and returns a list of articles objects
 	'''
     get_article_url = articles_url.format(id, api_key)
-    
     with urllib.request.urlopen(get_article_url) as url:
         article_details = url.read()
         articles_results = json.loads(article_details)
@@ -69,7 +68,26 @@ def get_article(id):
         article_object = None
         if articles_results['articles']:
 			articles_object = process_articles(articles_results['articles'])
-
-        
+      
     return article_object
 
+def process_articles(articles_list):
+     '''
+    Function  that processes the article result and transform them to a list of Objects
+    '''
+    articles_object = []
+    
+    for article_item in articles_list:
+        id = article_item.get('id')
+        title = article_item.get('title')
+        image = article_item.get('image')
+        description = article_item.get('description')
+        url = article_item.get('url')
+        author = article_item.get('author')
+		date = article_item.get('date')
+  
+         if image:
+			articles_result = Articles(id,author,title,description,url,image,date)
+			articles_object.append(articles_result)	
+		
+	return articles_object
