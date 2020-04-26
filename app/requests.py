@@ -36,8 +36,29 @@ def get_sources(category):
         sources_results = process_results(sources_results_list)
         
     return sources_results
+ 
+def process_results(sources_list):
+   '''
+    Function  that processes the source result and transform them to a list of Objects
+    '''
+    sources_results = []
+    for source_item in sources_list:
+        id = source_item.get('id')
+		description = source_item.get('description')
+		url = source_item.get('url')
+		category = source_item.get('category')
+        name = source_item.get('name')
+		country = source_item.get('country')
+        language = source_item.get('language')
+        
+        source_object = Sources( id,description,url,category,name,country,language )
+        sources_results.append(source_object)
 
+return sources_results
 
-
-    
+def get_article(id):
+    '''
+	Function that processes the articles and returns a list of articles objects
+	'''
+    get_article_url = articles_url.format(id, api_key)
     
