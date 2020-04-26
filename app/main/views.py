@@ -21,8 +21,8 @@ def index():
     else:
         return render_template('index.html', title = title, sources = sources, ent = entertainment_sources, sports = sports_sources, tech = technology_sources,health = health_sources )
  
-@main.route('/')
-def articles(): 
+@main.route('/sources/<id>')
+def articles(id): 
     '''
     View root page function that returns the article page and its data
     '''
