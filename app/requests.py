@@ -20,3 +20,7 @@ def configure_request(app):
     articles_url = app.config ['ARTICLES_API_KEY']
     everything_search_url = app.config['EVERYTHING_SEARCH_URL']
     
+def get_sources(category):
+        '''
+    Function that gets the json response to our url request
+    '''
