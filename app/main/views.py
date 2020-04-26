@@ -16,3 +16,8 @@ def index():
 	health_sources = get_sources('health')
  
 	title = "News Highlight"
+    if search_everything:
+        return redirect(url_for('search', article_title = search_everything))
+    else:
+        return render_template('index.html', title = title, sources = sources, ent = entertainment_sources, sports = sports_sources, tech = technology_sources,health = health_sources )
+ 
