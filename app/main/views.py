@@ -37,4 +37,9 @@ def search(article_title):
     '''
     View function to display the search results
     '''
-  
+    limit = 40
+    article_name_list = article_title.split(" ")
+    article_name_format = "+".join(article_name_list)
+    searched_articles = search_article(article_name_format)
+    title = f'search results for {article_title}'
+    return render_template('search.html',title = title ,articles = searched_articles)
