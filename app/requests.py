@@ -1,5 +1,6 @@
 import urllib.request, json
 from .models import Sources,Articles
+from datetime import datetime
 
 # Getting api key
 api_key = None
@@ -7,10 +8,10 @@ api_key = None
 # Getting the base url
 base_url = None
 
-# Getting the article
+# Getting the articlces url
 articles_url = None
 
-# search
+# Getting the search url
 everything_search_url = None
 
 def configure_request(app):

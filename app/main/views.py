@@ -6,8 +6,7 @@ from ..requests import get_sources,get_article,search_everything
 # Views
 @main.route('/')
 def index(): 
-    '''
-    View root page function that returns the index page and its data
+    ''' View root page function that returns the index page and its data
     '''
     sources = get_sources('business')
     entertainment_sources = get_sources('entertainment')
