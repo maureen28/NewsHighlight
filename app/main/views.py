@@ -10,23 +10,23 @@ def index():
     '''
     sources = get_sources('business')
     entertainment_sources = get_sources('entertainment')
-	sports_sources = get_sources('sports')
-	technology_sources = get_sources('technology')
-	health_sources = get_sources('health')
+    sports_sources = get_sources('sports')
+    technology_sources = get_sources('technology')
+    health_sources = get_sources('health')
  
-	title = "News Highlight"
+    title = "News Highlight"
     if search_everything:
         return redirect(url_for('search', article_title = search_everything))
     else:
-        return render_template('index.html', title = title, sources = sources, ent = entertainment_sources, sports = sports_sources, tech = technology_sources,health = health_sources )
+        return render_template('index.html', title = title, sources = sources, ent = entertainment_sources, sport = sports_sources, tech = technology_sources,health = health_sources )
  
 @main.route('/sources/<id>')
 def articles(id): 
     '''
     View root page function that returns the article page and its data
     '''
-   article = get_article(id)
-   title = f'{article.title}'
+    article = get_article(id)
+    title = f'{article.title}'
 
     return render_template('article.html', title = title, article = article )
 
