@@ -30,3 +30,11 @@ def articles():
    title = f'{article.title}'
 
     return render_template('article.html', title = title, article = article )
+
+
+@main.route('/search/<article_title>')
+def search(article_title):
+    '''
+    View function to display the search results
+    '''
+  
