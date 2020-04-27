@@ -1,23 +1,35 @@
 import os
 
 class Config:
- 
-    NEWS_SOURCES_BASE_URL ='https://newsapi.org/v2/{}?country=us&apiKey={}'
-    ARTICLES_BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
-    EVERYTHING_SEARCH_URL = 'https://newsapi.org/v2/everything?q={}&pageSize={}&apiKey={}'
-    NEWS_API_KEY = '7909f08eab26458ca3a3e60718f7949d'
-    
-class ProdConfig:
-        '''Production  configuration child class
-        '''
-        pass
-    
-class DevConfig:
-     '''Development  configuration child class
-     '''
-     DEBUG = True
-     
+    '''
+    General confirguration parent class
+    '''
+
+    NEWS_API_BASE_URL="https://newsapi.org/v2/{}?country=us&apiKey={}"
+
+    NEWS_API_KEY='2fe2d0bc30814144b6e25ad0e66af8c4'
+
+
+class ProdConfig(Config):
+    '''
+    Production configuration child class
+    Args:
+        Config: The parent configuration class with General confirguration settings
+    '''
+    pass
+
+
+class DevConfig(Config):
+    '''
+    Development configuration child class
+    Args:
+        Config: The parent configuration class with General confirguration settings
+    '''
+
+    DEBUG = True
+
+
 config_options = {
-'development': DevConfig,
-'production': ProdConfig
+    'development': DevConfig,
+    'production': ProdConfig
 }

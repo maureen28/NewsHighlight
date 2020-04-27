@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/maureen/Documents/Moringa Python/Assignments/News/virtual/bin/python" "$0" "$@"
-' '''
+#!/home/maureen/Documents/Flask-project1-master/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,29 +1,25 @@
-{% macro displaySourceList(source_list) %}
+{% macro dispalyNewsList(news_list) %}
 
-{% for source_row in source_list |batch(4)%}
-<div class="row">
-
-    {% for sources in source_row %}
-    <div class="col-md-3">
-
+<div class="container-fluid">
+    <div class="row">
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <a href="/sources/{{sources.id}}">
-                    {{ sources.name}}
-                </a>
+            {% for new in news_list %}
+            <div style="height: 100vh" class="col-md-3 " style="text-align: center">
+                <h2 class="panel-header" style="font-size: 18px;">{{new.source}}</h2>
+                <div class="thumbnails"> <br>
+                    <img src="{{ new.urlToImage }}" width="350" height="200"
+                        class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+                <div class="panel-title">
+                    <h4 class="featurette-heading" style="font-weight: bold;">
+                    {{ new.title | truncate(60)}}
+                </h4>
+                <p class=" panel-body"> {{ new.description | truncate(200) }} </p>
+                        <a href="{{new.url}}" class="btn btn-info card-link" target="_blank">View full story &raquo;</a>
+                </div>
             </div>
-            <div class="panel-body">
-                <p>
-                    {{ sources.description |truncate(100)}}
-
-                </p>
-                <a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">Visit {{sources.name}}</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
-    {% endfor %}
-
 </div>
-{% endfor %}
-
 {% endmacro %}
