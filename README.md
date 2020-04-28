@@ -7,7 +7,7 @@ News Highlight is an application that helps users list and preview news articles
 They are able to see various news sources on the application homepage, select a news source as well as see the image, description and the time a news article was created.
 
 ### Screenshot.
-<img src="" alt="News Highlight" width="400"/>
+<img src="/Screenshot from 2020-04-28 09-36-51.jpg" alt="News Highlight" width="400"/>
 
 ## Setup Instructions
 <ol>
