@@ -1,16 +1,15 @@
-<!-- {% extends 'base.html' %}
+<!-- {% extends 'base.html' %} -->
 <!-- {% import 'macros.html' as macro %} -->
-<style>
-    
-</style>
-{% block content %}
 
-<h4 class="text-center"> Found {{ news | count }} search results</h4>
-    <hr><br><br><br>
+{% block content %}
+<h3 class="text-center">We found {{ news | count }} items that match your search.</h3>
+
+<div style="background-image: url(https://bit.ly/2F6YcQQ);background-size:cover; background-repeat:no-repeat; background-attachment:fixed">
+<hr><br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-                {{ macro.dispalyNewsList(news) }}
+            {{ macro.dispalyNewsList(news) }}
         </div>
     </div>
 
