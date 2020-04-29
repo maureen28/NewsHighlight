@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect, url_for
 from . import main
-from ..request import get_news, search_news, sources_news
+from ..request import get_article, search_article, source_article
 
 
 @main.route("/")
@@ -8,7 +8,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    top_headlines = get_news("top-headlines")
+    top_headlines = get_article("top-headlines")
 
     title = "News headlines"
 
@@ -30,7 +30,7 @@ def search(news_name):
     '''
     news_name_list = news_name.split(" ")
     news_name_format = "+".join(news_name_list)
-    searched_news = search_news(news_name_format)
+    searched_news = search_article(news_name_format)
     title = f" Search results for {news_name}"
 
     return render_template("search.html", news=searched_news)

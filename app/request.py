@@ -1,7 +1,5 @@
-import urllib.request
-import json
-from .models import News, Sources
-
+import urllib.request, json
+from .models import Articles, Sources
 
 # getting api key
 
@@ -18,7 +16,7 @@ def configure_request(app):
     base_url = app.config["NEWS_API_BASE_URL"]
 
 
-def get_news(category):
+def get_article(category):
     '''
     Function that gets json response to our url request
     '''
@@ -38,9 +36,9 @@ def get_news(category):
     return news_results
 
 
-def search_news(topic):
+def search_article(topic):
     '''
-    Function to search for news by topic
+    Function searches for articles using the topic parameter
     '''
 
     search_news_url = "https://newsapi.org/v2/everything?q={}&apiKey={}".format(topic, api_key)
@@ -57,9 +55,9 @@ def search_news(topic):
     return search_news_results
 
 
-def sources_news():
+def source_article():
     '''
-    Function to search news sources
+    Function to search for all articles
     '''
     sources_url = "https:/newsapi.org/v2/sources?apiKey{}".format(api_key)
 
@@ -95,16 +93,14 @@ def process_results(news_list):
         content = news_item.get("content")
 
         if urlToImage:
-            news_object = News(author, title, description, url, urlToImage, content)
+            news_object = Articles(author, title, description, url, urlToImage, content)
             news_results.append(news_object)
 
     return news_results
 
 
 def process_sources(sources_list):
-    '''
-
-    '''
+   
     sources_results = []
 
     for sources_item in sources_list:
